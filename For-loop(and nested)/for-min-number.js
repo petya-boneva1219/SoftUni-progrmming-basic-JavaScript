@@ -1,12 +1,12 @@
 function num(input) {
-  let broiChisla= Number(input[0]);
+  let n= Number(input[0]);
   let biggest= Number.MIN_SAFE_INTEGER;
   let smallest=Number.MAX_SAFE_INTEGER;
 
-  for (let index = 1; index <= broiChisla; index++) {
-     let chisloMasiv=Number(input[index]);
-     if(chisloMasiv<smallest){
-      smallest=chisloMasiv
+  for (let index = 1; index <= n; index++) {
+     let element=Number(input[index]);
+     if(element<smallest){
+      smallest=element
      }
      
   }

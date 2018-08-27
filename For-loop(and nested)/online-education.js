@@ -1,31 +1,31 @@
 function online(input) {
-  let nachin = input[0];
-  let broiHora = Number(input[1]);
-  let sumaOnline = 0;
-  let sumaOnsite = 0;
-  let razlika = 0;
+  let wayOfStudy = input[0];
+  let numOfStudents = Number(input[1]);
+  let sumOnline = 0;
+  let sumOnsite = 0;
+  let difference = 0;
 
   for (let i = 0; i < input.length; i++) {
 
-    let nachin = input[i];
+    let wayOfStudy = input[i];
     i++
-    let broiHora = Number(input[i]);
-    switch (nachin) {
-      case "online": sumaOnline += broiHora;
+    let numOfStudents = Number(input[i]);
+    switch (wayOfStudy) {
+      case "online": sumOnline += numOfStudents;
       break;
-      case "onsite": sumaOnsite += broiHora;
+      case "onsite": sumOnsite += numOfStudents;
       default:
       break;
     }
-  }if(sumaOnsite > 600){
-     razlika = Math.abs(sumaOnsite - 600);
-    sumaOnline += razlika;
-    sumaOnsite-=razlika;
+  }if(sumOnsite > 600){
+     difference = Math.abs(sumOnsite - 600);
+    sumOnline += difference;
+    sumOnsite-=difference;
   }
   
-  console.log(`Online students: ${sumaOnline}`);
-  console.log(`Onsite students: ${sumaOnsite}`);
-  console.log(`Total students: ${sumaOnline + sumaOnsite}`);
+  console.log(`Online students: ${sumOnline}`);
+  console.log(`Onsite students: ${sumOnsite}`);
+  console.log(`Total students: ${sumOnline + sumOnsite}`);
 
 
 }
