@@ -1,20 +1,20 @@
 function tom(input) {
-   let pochivniDni=Number(input[0]);
+   let daysForRest=Number(input[0]);
    let normaZaSpane= Number(30000);
- let rabotniDni= 365-pochivniDni;
- let minPochDni=127*pochivniDni;
- let minRabDni= 63*rabotniDni;
- let razlika=normaZaSpane-(minPochDni+minRabDni);
- let chasove= razlika/60;
- let minuti= razlika%60;
+ let workDays= 365-daysForRest;
+ let minDaysForRest=127*daysForRest;
+ let minDaysForwork= 63*workDays;
+ let diff=normaZaSpane-(minDaysForRest+minDaysForwork);
+ let hours= diff/60;
+ let min= diff%60;
 
- if((minPochDni+minRabDni)<normaZaSpane){
+ if((minDaysForRest+minDaysForwork)<normaZaSpane){
     console.log("Tom sleeps well");
-    console.log(` ${parseInt(chasove)} hours and ${minuti} minutes less for play`);
+    console.log(` ${parseInt(hours)} hours and ${min} minutes less for play`);
     
- }else if((minPochDni+minRabDni)>normaZaSpane){
+ }else if((minDaysForRest+minDaysForwork)>normaZaSpane){
     console.log("Tom will run away");
-    console.log(`${Math.abs(parseInt(chasove))} hours and ${Math.abs(minuti)} minutes more for play`);
+    console.log(`${Math.abs(parseInt(hours))} hours and ${Math.abs(min)} minutes more for play`);
  }
  
 }

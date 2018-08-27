@@ -1,7 +1,7 @@
 function dumi(input) {
-   let first=(input[0]).toLowerCase();
-   let second=(input[1]).toLowerCase()
-if(first===second){
+   let  firstWord=(input[0]).toLowerCase();
+   let secondWord=(input[1]).toLowerCase()
+if( firstWord===secondWord){
    console.log("yes");
 }else{
    console.log("no");

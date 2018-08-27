@@ -1,28 +1,28 @@
 function chisla(input) {
-   let vhod=Number(input[0]);
-   if(vhod===1){
+   let number=Number(input[0]);
+   if(number===1){
       console.log("one");
-   }else if(vhod===2){
+   }else if(number===2){
       console.log("two");
-   }else if(vhod===3){
+   }else if(number===3){
       console.log("three");
       
-   }else if(vhod===4){
+   }else if(number===4){
       console.log("four");
       
-   }else if(vhod===5){
+   }else if(number===5){
       console.log("five");
       
-   }else if(vhod===6){
+   }else if(number===6){
       console.log("six");
       
-   }else if(vhod===7){
+   }else if(number===7){
       console.log("seven");
       
-   }else if(vhod===8){
+   }else if(number===8){
       console.log("eight");
       
-   }else if(vhod===9){
+   }else if(number===9){
       console.log("nine");}
       
    else{

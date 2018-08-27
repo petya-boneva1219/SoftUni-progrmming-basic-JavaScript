@@ -1,48 +1,48 @@
 function zadacha(input) {
 
 
-   let minuti = Number(input[0]);
-   let igrach = input[1];
+   let min = Number(input[0]);
+   let player = input[1];
 
  
    
-      if (minuti > 0 && minuti <= 10) {
+      if (min > 0 && min <= 10) {
          console.log(`First half time.`);
-         console.log(`${igrach} missed a penalty.`);
-         if (minuti % 2 === 0) {
-            console.log(`${igrach} was injured after the penalty.`);
+         console.log(`${player} missed a penalty.`);
+         if (min % 2 === 0) {
+            console.log(`${player} was injured after the penalty.`);
          }
-      } else if (minuti > 10 && minuti <= 35) {
+      } else if (min > 10 && min <= 35) {
          console.log(`First half time.`);
 
-         console.log(`${igrach} received yellow card.`);
-         if (minuti % 2 != 0) {
-            console.log(`${igrach} got another yellow card.`);
+         console.log(`${player} received yellow card.`);
+         if (min % 2 != 0) {
+            console.log(`${player} got another yellow card.`);
 
          }
-      } if (minuti > 35 && minuti <= 44) {
+      } if (min > 35 && min <= 44) {
          console.log(`First half time.`);
-         console.log(`${igrach} SCORED A GOAL !!!`);
+         console.log(`${player} SCORED A GOAL !!!`);
       }
-      else if (minuti >= 45 && minuti <= 55) {
+      else if (min >= 45 && min <= 55) {
          console.log(`Second half time.`);
-         console.log(`${igrach} got a freekick.`);
-         if (minuti % 2 === 0) {
-            console.log(`${igrach} missed the freekick.`);
+         console.log(`${player} got a freekick.`);
+         if (min % 2 === 0) {
+            console.log(`${player} missed the freekick.`);
 
          }
-      } else if (minuti > 55 && minuti <= 80) {
+      } else if (min > 55 && min <= 80) {
          console.log(`Second half time.`);
-         console.log(`${igrach} missed a shot from corner.`);
-         if (minuti % 2 != 0) {
-            console.log(`${igrach} has been changed with another player.`);
+         console.log(`${player} missed a shot from corner.`);
+         if (min % 2 != 0) {
+            console.log(`${player} has been changed with another player.`);
 
          }
-      } else if (minuti > 80 && minuti <= 90) {
+      } else if (min > 80 && min <= 90) {
          console.log(`Second half time.`);
-         console.log(`${igrach} SCORED A GOAL FROM PENALTY !!!`);
+         console.log(`${player} SCORED A GOAL FROM PENALTY !!!`);
 
-      }else if(minuti==0){
+      }else if(min==0){
          
             console.log(`Match has just began!`);
       }

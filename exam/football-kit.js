@@ -1,20 +1,20 @@
 function zadacha(input) {
-   let cenateniska= Number(input[0]);
-   let krainacel= Number(input[1]);
-   let cenashorti= cenateniska*0.75;
-   let cenachorapi= cenashorti*0.2;
-   let cenabutonki= (cenateniska+cenashorti)*2;
-   let obshto= cenateniska+cenashorti+cenachorapi+cenabutonki;
+   let priceTshirt= Number(input[0]);
+   let goal= Number(input[1]);
+   let priceShorti= priceTshirt*0.75;
+   let priceSocks= priceShorti*0.2;
+   let priceShoes= (priceTshirt+priceShorti)*2;
+   let sum= priceTshirt+priceShorti+priceSocks+priceShoes;
 
-   let krai= (obshto-(obshto*0.15)).toFixed(2);
+   let totalPrice= (sum-(sum*0.15)).toFixed(2);
 
-   if(krai>= krainacel){
+   if(totalPrice>= goal){
       console.log(`Yes, he will earn the world-cup replica ball!`);
-      console.log(`His sum is ${krai} lv.`);
+      console.log(`His sum is ${totalPrice} lv.`);
       
    }else{
        console.log(`No, he will not earn the world-cup replica ball.`);
-       console.log(`He needs ${(krainacel-krai).toFixed(2)} lv. more.`);  
+       console.log(`He needs ${(goal-totalPrice).toFixed(2)} lv. more.`);  
    
    }
   
