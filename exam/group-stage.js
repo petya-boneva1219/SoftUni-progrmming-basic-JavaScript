@@ -7,13 +7,13 @@ function zadacha(input) {
 
   
    for (let i = 1; i <=numGames; i++){
-      let vkarangol = Number(input[index])
+      let goalsScored = Number(input[index])
     index++;
     let minusgol= Number(input[index])
-    goaldiff+=vkarangol-minusgol
-   if(vkarangol>minusgol){
+    goaldiff+=goalsScored-minusgol
+   if(goalsScored>minusgol){
 points+=3
-   }else if(vkarangol==minusgol){
+   }else if(goalsScored==minusgol){
       points+=1
    }else{
       points+=0
