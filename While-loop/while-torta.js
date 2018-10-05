@@ -2,7 +2,7 @@ function torta(input) {
   let width = Number(input[0]);
   let lenght = Number(input[1]);
   let i = 0;
-  let broiParcheta = input[i];
+  let numPeaces = input[i];
   let area = width * lenght;
   let leftPeaces = 0;
   let masiv = (input.length) - 2

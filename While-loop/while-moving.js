@@ -1,8 +1,8 @@
 function move(params) {
-   let shiroko= Number(params[0]);
-   let duljina= Number(params[1]);
-   let visochina= Number(params[2]);
-   let area= shiroko*duljina*visochina;
+   let width= Number(params[0]);
+   let lenght= Number(params[1]);
+   let height= Number(params[2]);
+   let area= width*lenght*height;
    let sum=0;
 let i=3
 while (area >= 0) {

@@ -1,5 +1,5 @@
 function voda(input) {
-   let obem=Number(input[0]);
+   let volume=Number(input[0]);
    let sumaMl=0
    let i=1
    let button=input[i]; 
@@ -15,12 +15,12 @@ function voda(input) {
       }else if(button==="Easy"){
          sumaMl+=50
       }
-      if(sumaMl==obem){
+      if(sumaMl==volume){
          console.log(`The dispenser has been tapped ${stupka} times.`);
          break;  
       }
       if(sumaMl>obem){
-         console.log(`${Math.abs(obem-sumaMl)}ml has been spilled.`);
+         console.log(`${Math.abs(volume-sumaMl)}ml has been spilled.`);
          break;   
       }
       stupka++;
