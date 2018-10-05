@@ -3,13 +3,13 @@ function calori(input) {
    let weight=Number(input[1]);
    let height=Number(input[2]*100);
    let age= Number(input[3]);
-   let nivoAKTOVNOST=(input[4]);
+   let levelActivity=(input[4]);
    let bnm=0;
    let calories=0;
 
    if(gender === "m"){
  bnm= 66 + (13.7*weight) + (5*height) - (6.8*age);
- switch (nivoAKTOVNOST){
+ switch (levelActivity){
     case "sedentary": calories=bnm*1.2;
     break;
     case "lightly active":calories= bnm*1.375;
@@ -24,7 +24,7 @@ function calori(input) {
  }
    }else if(gender==="f"){
       bnm= 655 + (9.6*weight) + (1.8*height) - (4.7*age);
-      switch (nivoAKTOVNOST){
+      switch (levelActivity){
          case "sedentary":calories= bnm*1.2;
          break;
          case "lightly active":calories= bnm*1.375;

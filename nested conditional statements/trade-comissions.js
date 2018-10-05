@@ -1,46 +1,46 @@
 function komis(input) {
-   let grad = input[0];
-   let pari = Number(input[1]);
+   let city = input[0];
+   let money = Number(input[1]);
    let sum = 0
 
-   if (grad === "Sofia") {
-      if (pari >= 0 && pari <= 500) {
-         sum = pari * 0.05
-      } else if (pari > 500 && pari <= 1000) {
-         sum = pari * 0.07
-      } else if (pari > 1000 && pari <= 10000) {
-         sum = pari * 0.08
-      } else if (pari > 10000) {
-         sum = pari * 0.12
+   if (city === "Sofia") {
+      if (money >= 0 && money <= 500) {
+         sum = money * 0.05
+      } else if (money > 500 && money <= 1000) {
+         sum = money * 0.07
+      } else if (money > 1000 && money <= 10000) {
+         sum = money * 0.08
+      } else if (money > 10000) {
+         sum = money * 0.12
       } else {
          console.log("error");
 
       }
 
-   } else if (grad === "Varna") {
-      if (pari >= 0 && pari <= 500) {
-         sum = pari * 0.045
-      } else if (pari > 500 && pari <= 1000) {
-         sum = pari * 0.075
-      } else if (pari > 1000 && pari <= 10000) {
-         sum = pari * 0.1
-      } else if (pari > 10000) {
-         sum = pari * 0.13
+   } else if (city === "Varna") {
+      if (money >= 0 && money <= 500) {
+         sum = money * 0.045
+      } else if (money > 500 && money <= 1000) {
+         sum = money * 0.075
+      } else if (money > 1000 && money <= 10000) {
+         sum = money * 0.1
+      } else if (money > 10000) {
+         sum = money * 0.13
       } else {
          console.log("error");
 
       }
 
 
-   } else if (grad === "Plovdiv") {
-      if (pari >= 0 && pari <= 500) {
-         sum = pari * 0.055
-      } else if (pari > 500 && pari <= 1000) {
-         sum = pari * 0.08
-      } else if (pari > 1000 && pari <= 10000) {
-         sum = pari * 0.12
-      } else if (pari > 10000) {
-         sum = pari * 0.145
+   } else if (city === "Plovdiv") {
+      if (money >= 0 && money <= 500) {
+         sum = money * 0.055
+      } else if (money > 500 && money <= 1000) {
+         sum = money * 0.08
+      } else if (money > 1000 && money <= 10000) {
+         sum = money * 0.12
+      } else if (money > 10000) {
+         sum = money * 0.145
       } else {
          console.log("error");
 
@@ -52,5 +52,5 @@ function komis(input) {
    
 }
 komis(["Sofia",
-   -63
+   1500
 ])

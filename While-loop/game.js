@@ -1,29 +1,29 @@
 function ffff(input) {
-   let krai=Number(input[0]);
-   let pari= Number(input[1]);
+   let items=Number(input[0]);
+   let money= Number(input[1]);
 
-if(krai>7){
+if(items>7){
    console.log(`Sorry, you can't carry so many things!`);
    return;
 }
 let i=2;
-while (pari>0) {
+while (money>0) {
 let element= input[i];
 
 switch (element) {
-   case "ak47" : pari-=2700;
+   case "ak47" : money-=2700;
  break;
- case "wp" : pari-=4750;
+ case "wp" : money-=4750;
  break;
- case "sg553" : pari-=3500;
+ case "sg553" : money-=3500;
  break;
- case "grenade" : pari-=300;
+ case "grenade" : money-=300;
  break;
- case "flash" : pari-=250;
+ case "flash" : money-=250;
  break;
- case "glock" : pari-=500;
+ case "glock" : money-=500;
  break;
- case "bazooka" : pari-=5600;
+ case "bazooka" : money-=5600;
  break;
    default:
       break;
@@ -31,11 +31,11 @@ switch (element) {
 
    i++
 }
-if(pari>=0){
-   console.log(`You bought all ${krai} items! Get to work and defeat the bomb!`);
+if(money>=0){
+   console.log(`You bought all ${items} items! Get to work and defeat the bomb!`);
    
 }else{
-   console.log(`Not enough money! You need ${Math.abs(pari)} more money`);
+   console.log(`Not enough money! You need ${Math.abs(money)} more money`);
    
 }
 

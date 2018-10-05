@@ -1,10 +1,10 @@
 function shop(input) {
    let produkt=input[0];
-   let grad=input[1];
+   let city=input[1];
    let kolich=Number(input[2]);
    let sum=0;
 
-if(grad==="Sofia"){
+if(city==="Sofia"){
    if(produkt==="coffee"){
       sum=kolich*0.5
    }else if(produkt==="water"){
@@ -16,7 +16,7 @@ if(grad==="Sofia"){
    }else{
       sum=kolich*1.6
    }
-}else if(grad==="Plovdiv"){
+}else if(city==="Plovdiv"){
    if(produkt==="coffee"){
       sum=kolich*0.4
    }else if(produkt==="water"){
@@ -29,7 +29,7 @@ if(grad==="Sofia"){
       sum=kolich*1.50
    }
 
-}else if(grad==="Varna"){
+}else if(city==="Varna"){
    if(produkt==="coffee"){
       sum=kolich*0.45
    }else if(produkt==="water"){
